@@ -8,7 +8,6 @@ path_file = "csv/zadanie.csv"
 ml = []
 with open(path_file, "r") as f:
     ml = f.readlines()
-
 @app.route('/<sku>', methods=['GET'])
 def appearance(sku):
     rank = request.args.get('rank')
@@ -31,7 +30,7 @@ def appearance(sku):
         z = (left + right) // 2
 
     if left > right:
-        return jsonify({"recommend": "Нет такого товара"})
+        return Response(f"Товара по имени {sku} не существует", status=400)
     else:
         result = {"recommend": []}
         if float(ml[z][-4:-1:]) >= rank:
