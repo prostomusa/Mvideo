@@ -32,5 +32,5 @@ python main.py
 ### Ссылка на файлы CSV:
 [https://cloud.mail.ru/public/34bt/uU48ZxQBW]
 
-### Ссылка на документацию API:
-[https://documenter.getpostman.com/view/7641548/TVmMgdL1]
+### Ссылка на примеры запросов:
+[https://documenter.getpostman.com/view/7641548/Tz5wWEfY]
